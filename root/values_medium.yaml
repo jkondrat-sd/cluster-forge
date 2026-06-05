@@ -2,8 +2,6 @@
 
 enabledApps:
   - aim-cluster-model-source
-  - aim-engine
-  - aim-engine-crds
   - airm
   - airm-infra-cnpg
   - airm-infra-external-secrets
@@ -210,13 +208,6 @@ apps:
                   requests:
                     storage: 25Gi
                 storageClassName: direct
-  aim-engine:
-    valuesObject:
-      operator:
-        resources:
-          requests:
-            cpu: "100m"
-            memory: "256Mi"
   airm:
     valuesObject:
       backend:
